@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  norway_salmon: MyString
+  smoked_slice1: MyText
+  smoked_slice2: MyText
+  source1: 1
+  source2: 1
+
+two:
+  norway_salmon: MyString
+  smoked_slice1: MyText
+  smoked_slice2: MyText
+  source1: 1
+  source2: 1

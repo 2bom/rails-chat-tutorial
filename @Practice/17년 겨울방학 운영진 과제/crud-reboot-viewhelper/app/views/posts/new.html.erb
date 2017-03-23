@@ -1,0 +1,11 @@
+<h1>new post</h1>
+
+<%= form_tag("/posts/create", method: "post") do %>
+  <%= label_tag(:title, "Title :") %>
+  <%= text_field_tag(:title, nil, placeholder: "Type title here.") %>
+  <%= label_tag(:content, "Content :") %>
+  <!-- text_area_tag 기본형(순서도 convention, argument들을 맞춰서 집어넣어줘야 동작함)-->
+  <!-- text_area_tag(name, content = nil, options = {})-->
+  <%= text_area_tag(:content, nil, size: "24x6", placeholder: "Type content here.") %>
+  <%= submit_tag("CREATE") %>
+<% end %>

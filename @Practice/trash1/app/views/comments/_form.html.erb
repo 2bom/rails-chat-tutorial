@@ -1,0 +1,6 @@
+<h1>Comments#_form</h1>
+<p>Find me in app/views/comments/_form.html.erb</p>
+<%= form_for([@post, @post.comments.build]) do |f| %>
+  <%= f.text_field :content %>
+  <%= f.submit %>
+<% end %>

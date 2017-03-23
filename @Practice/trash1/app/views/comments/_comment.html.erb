@@ -1,0 +1,8 @@
+<h1>Comments#_comment</h1>
+<p>Find me in app/views/comments/_comment.html.erb</p>
+<% @comments.each do |c| %>
+  <%= c.content %>
+  <%= link_to "delete", post_comment_path(post_id: c.post_id, id: c.id), method: :DELETE%><br />
+<% end %>
+
+<%= render "comments/form" %>

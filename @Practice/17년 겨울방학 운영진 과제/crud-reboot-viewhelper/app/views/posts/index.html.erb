@@ -1,0 +1,12 @@
+<h1>index</h1>
+
+<ul>
+  <% @all_posts.each do |p| %>
+  <li>
+    <%= link_to "#{ p.title }", controller: "posts", action: "show", id: "#{p.id}" %>
+  </li>
+  <% end %>
+</ul>
+<button>
+  <%= link_to "create", controller: "posts", action: "new" %>
+</button>

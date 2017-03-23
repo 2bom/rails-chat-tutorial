@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  interviewer: one
+  question: one
+  point: 1
+
+two:
+  interviewer: two
+  question: two
+  point: 1

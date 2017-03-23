@@ -1,0 +1,14 @@
+<h1>show</h1>
+
+  <%= simple_format("TITLE ::: #{ @selected_post.title }") %>
+  <%= simple_format("CONTENT ::: #{ @selected_post.content }") %>
+
+<button>
+<%= link_to "list", controller: "posts", action: "index" %>
+</button>
+<button>
+  <%= link_to "edit", controller: "posts", action: "edit", id: @selected_post.id %>
+</button>
+<button>
+<%= link_to "delete", controller: "posts", action: "delete", id: @selected_post.id %>
+</button>
